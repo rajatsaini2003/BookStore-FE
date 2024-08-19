@@ -46,7 +46,7 @@ function Navbar() {
       </li>
       <li>
         <Link to='/course'>
-        <a >Course</a>
+        <a >Books</a>
         </Link>
         
       </li>

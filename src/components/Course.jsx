@@ -39,11 +39,6 @@ function Course() {
               Back
             </button>
           </Link>
-          <Link to="/">
-            <button className="mt-6 ml-3 bg-pink-500 text-white px-4 py-2 rounded-md hover:bg-pink-700 duration-300">
-              Add Book
-            </button>
-          </Link>
         </div>
         <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
           {book.map((item) => (
