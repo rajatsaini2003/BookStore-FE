@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 function About() {
   return (
@@ -40,12 +41,12 @@ function About() {
         </div>
 
         <div className="mt-8 text-center">
-          <a 
-            href="/contact" 
-            className="bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-400"
-          >
+          <Link to="/contact">
+          <a    
+            className="bg-blue-950 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-400">
             Get in Touch
           </a>
+          </Link>
         </div>
       </div>
     </div>
