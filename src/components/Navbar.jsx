@@ -3,7 +3,7 @@ import { useState } from "react";
 import Login from "./Login";
 import Logout from "./Logout";
 import { useAuth } from "../context/AuthProvider";
-
+import { Link } from "react-router-dom";
 function Navbar() {
   // eslint-disable-next-line no-unused-vars
   const [authUser, setAuthUser] = useAuth();
@@ -40,16 +40,27 @@ function Navbar() {
   const navItems = (
     <>
       <li>
-        <a href="/">Home</a>
+        <Link to='/'>
+          <a >Home</a>
+        </Link>
       </li>
       <li>
-        <a href="/course">Course</a>
+        <Link to='/course'>
+        <a >Course</a>
+        </Link>
+        
       </li>
       <li>
-        <a href="/contact">Contact</a>
+        <Link to='/contact'>
+        <a >Contact</a>
+        </Link>
+        
       </li>
       <li>
-        <a href="/about">About</a>
+        <Link to='/about'>
+        <a >About</a>
+        </Link>
+        
       </li>
     </>
   );
